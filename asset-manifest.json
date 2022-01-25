@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/goit-react-hw-04-hooks-feedback/static/css/main.224460ad.css",
+    "main.js": "/goit-react-hw-04-hooks-feedback/static/js/main.5deafbea.js",
+    "static/js/787.0a67cb42.chunk.js": "/goit-react-hw-04-hooks-feedback/static/js/787.0a67cb42.chunk.js",
+    "index.html": "/goit-react-hw-04-hooks-feedback/index.html",
+    "main.224460ad.css.map": "/goit-react-hw-04-hooks-feedback/static/css/main.224460ad.css.map",
+    "main.5deafbea.js.map": "/goit-react-hw-04-hooks-feedback/static/js/main.5deafbea.js.map",
+    "787.0a67cb42.chunk.js.map": "/goit-react-hw-04-hooks-feedback/static/js/787.0a67cb42.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.224460ad.css",
+    "static/js/main.5deafbea.js"
+  ]
+}
