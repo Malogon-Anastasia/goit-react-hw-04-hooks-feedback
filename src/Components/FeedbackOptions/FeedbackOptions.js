@@ -1,12 +1,7 @@
 import PropTypes from "prop-types";
 import { OptionsButton } from "./FeedbackOptions.styled";
 
-function getRandomColor() {
-  const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
-  return randomColor;
-}
-
-export default function FeedbackOptions({ options, clickFn }) {
+export default function FeedbackOptions({ options,  onLeaveFeedback }) {
   return (
     <div>
       {options.map((option) => (
@@ -14,20 +9,16 @@ export default function FeedbackOptions({ options, clickFn }) {
           type="button"
           key={option}
           id={option}
-          onClick={clickFn}
-          style={{ backgroundColor: getRandomColor() }}
-        >
+          onClick={onLeaveFeedback}
+           >
           {option}
         </OptionsButton>
       ))}
     </div>
   );
 }
-FeedbackOptions.defaultProps = {
-  options: [],
-};
 
 FeedbackOptions.propTypes = {
-  options: PropTypes.array.isRequired,
-  clickFn: PropTypes.func,
+  options: PropTypes.arrayOf(PropTypes.string).isRequired,
+  onLeaveFeedback: PropTypes.func.isRequired,
 };
